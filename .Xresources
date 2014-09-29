@@ -1,0 +1,144 @@
+! xterm color scheme — Make all 16 beautiful.
+!
+! Suited for black background, but includes disabled alternative light scheme.
+!
+! Use xfontsel and xlsfonts to find other fonts.
+!
+! On Ubuntu I have to name this file ‘~/.Xdefaults-$(hostname)’
+!
+! ‘xrdb -load ~/.Xdefaults-stud’ is supposed to reload this file, but
+! doesn’t seem to, so just fire new xterm upon every change.
+!
+! Other resources:
+! * showrgb — util to dump color db.
+! * test-color-words16 — another color-displaying util (worth gist-ing).
+
+
+!xterm*font:÷ -*-*-*-*-*-*-*-100-*-*-*-60-iso10646-*
+!xterm*boldFont: -*-*-*-*-*-*-*-100-*-*-*-120-iso10646-*
+!XTerm.VT100.font: -*-terminus-*-*-*-44-*-*-*-*-*-*-*
+XTerm*faceName         : Liberation Mono:size=12:antialias=true
+
+!XTerm*faceName        : DejaVu Sans Mono
+xterm*termName         : xterm-256color
+XTerm*metaSendsEscape  : true
+Xterm*saveLines        : 10096
+
+!xterm.XTerm.dTitleBar : 0
+
+Xterm*TitleBar         : on
+Xterm*AllowIconInput   : on
+Xterm*Title            : xterm
+
+XTerm*renderFont       : true
+XTerm*faceSize         : 15
+
+!XTerm*font            : -*-terminus-medium-*-*-*-32-*-*-*-*-*-iso10646-*
+
+xterm*background       : #000000
+xterm*cursorColor      : #ff0000
+xterm*foreground       : #d3d3d3
+
+
+xterm*eightBitInput: false
+
+xterm*color0: rgb:00/00/00
+xterm*color1: rgb:a8/00/00
+xterm*color2: rgb:00/a8/00
+xterm*color3: rgb:a8/54/00
+xterm*color4: rgb:00/00/a8
+xterm*color5: rgb:a8/00/a8
+xterm*color6: rgb:00/a8/a8
+xterm*color7: rgb:a8/a8/a8
+xterm*color8: rgb:54/54/54
+xterm*color9: rgb:fc/54/54
+xterm*color10: rgb:54/fc/54
+xterm*color11: rgb:fc/fc/54
+xterm*color12: rgb:54/54/fc
+xterm*color13: rgb:fc/54/fc
+xterm*color14: rgb:54/fc/fc
+xterm*color15: rgb:fc/fc/fc
+xterm*boldMode: false
+xterm*colorBDMode: true
+xterm*colorBD: rgb:fc/fc/fc
+
+!xterm*VT100.*translations: #override \
+!                           Shift Ctrl C:select-end(CLIPBOARD, CUT BUFFER0) \n\
+!                           Shift Ctrl V:insert-selection(CLIPBOARD, CUT BUFFER0)
+
+
+! XTerm*color4: royalblue
+! XTerm*color12: lightblue
+
+
+!!! Fonts
+!xterm*font: -*-terminus-*-*-*-*-*-*-*-*-*-*-iso10646-*
+!xterm*boldFont: -*-terminus-*-*-*-*-*-*-*-*-*-*-iso10646-*
+!xterm*italicFont: -*-terminus-*-*-*-*-*-*-*-*-*-*-iso10646-*
+!xterm*font: -misc-fixed-medium-r-*-*-18-*-*-*-*-*-*-*
+!xterm*boldFont: -misc-fixed-medium-r-*-*-18-*-*-*-*-*-*-*
+
+! Very surprising that now neglecting to specify font still renders
+! perfect misc-fixed font. Oh, it’s so lovely.
+
+
+
+
+!xterm*italicFont: -*-*-*-*-*-*-*-100-*-*-*-60-iso10646-*
+
+
+!!! Enable copy/paste.
+! http://www.davidsimmons.com/soft/xtermhacks/
+!xterm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
+
+
+!!! Foreground
+
+
+
+!!! Background
+! Black
+!xterm*background: #000000
+! Green
+!xterm*background: #022C0A
+! Brown
+!xterm*background: #3F2F08
+! Black
+
+
+
+
+!xterm*cursorColor:  #57fd76
+!xterm*cursorColor:  yellow
+!xterm*cursorColor:      orange
+
+!xterm*charClass:        33:48,35-38:48,39:43,42-47:48,58-59:48,61:48,63-64:48,126:48
+!xterm*dynamicColors:    true
+
+
+!!! Themes overrides
+
+! MDE’s adobe theme overrides; very similar to vim colorscheme:
+!   http://www.vim.org/scripts/script.php?script_id=1365
+! Comment these out to enable theme.
+!xterm*foreground: #000000
+!xterm*background: #A2955F
+! yellow1
+!xterm*color3:           #684802
+! cyan1
+!xterm*color6:           #05635d
+! blue1
+!xterm*color4:           #3a5e87
+! blue2
+!xterm*color12:          #bcd7fd
+! purple2
+!xterm*color13:          #cf03a1
+! red2
+!xterm*color9:           #ffc2c2
+! white1
+!xterm*color7:           #c7c7c7
+
+
+! Other themes
+!xterm*background: #E3D7B4
+!xterm*background: #AFAF87
